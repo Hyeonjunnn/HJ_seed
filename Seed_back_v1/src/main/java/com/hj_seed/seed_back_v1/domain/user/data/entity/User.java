@@ -1,6 +1,7 @@
 package com.hj_seed.seed_back_v1.domain.user.data.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.hj_seed.seed_back_v1.common.data.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
@@ -20,7 +21,7 @@ import java.util.stream.Collectors;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User implements UserDetails {
+public class User extends BaseEntity implements UserDetails{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
@@ -40,8 +41,6 @@ public class User implements UserDetails {
     private String email;
 
     private String profileImage;
-
-    private LocalDateTime createdAt = LocalDateTime.now();
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -1,5 +1,6 @@
 package com.hj_seed.seed_back_v1.domain.post.data.entity;
 
+import com.hj_seed.seed_back_v1.common.data.entity.BaseEntity;
 import com.hj_seed.seed_back_v1.domain.category.data.entity.Category;
 import com.hj_seed.seed_back_v1.domain.tag.data.entity.Tag;
 import com.hj_seed.seed_back_v1.domain.user.data.entity.User;
@@ -16,7 +17,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Post {
+public class Post extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long postId;

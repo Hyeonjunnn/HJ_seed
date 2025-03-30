@@ -1,5 +1,6 @@
 package com.hj_seed.seed_back_v1.domain.like.data.entity;
 
+import com.hj_seed.seed_back_v1.common.data.entity.BaseEntity;
 import com.hj_seed.seed_back_v1.domain.user.data.entity.User;
 import com.hj_seed.seed_back_v1.domain.post.data.entity.Post;
 import jakarta.persistence.*;
@@ -16,7 +17,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Like {
+public class Like extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long likeId;
