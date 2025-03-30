@@ -1,5 +1,7 @@
-package com.hj_seed.seed_back_v1.data.entity;
+package com.hj_seed.seed_back_v1.domain.like.data.entity;
 
+import com.hj_seed.seed_back_v1.domain.user.data.entity.User;
+import com.hj_seed.seed_back_v1.domain.post.data.entity.Post;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.hj_seed.seed_back_v1.data.entity;
+package com.hj_seed.seed_back_v1.domain.tag.data.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

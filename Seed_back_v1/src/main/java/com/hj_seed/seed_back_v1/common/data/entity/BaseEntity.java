@@ -1,4 +1,4 @@
-package com.hj_seed.seed_back_v1.data.entity;
+package com.hj_seed.seed_back_v1.common.data.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
