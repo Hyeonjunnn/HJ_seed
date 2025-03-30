@@ -4,10 +4,7 @@ import com.hj_seed.seed_back_v1.domain.category.data.entity.Category;
 import com.hj_seed.seed_back_v1.domain.tag.data.entity.Tag;
 import com.hj_seed.seed_back_v1.domain.user.data.entity.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -16,6 +13,7 @@ import java.util.Set;
 @Table(name = "posts")
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Post {

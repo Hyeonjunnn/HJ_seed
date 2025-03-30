@@ -24,7 +24,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/post")
+@RequestMapping("/api/v1/post")
 @Tag(name = "Post APIs", description = "게시글 관련 API 목록")
 public class PostController {
 
